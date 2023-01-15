@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:fitsSystemWindows="true">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        app:elevation="0dp">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?actionBarSize"
+            app:navigationIcon="@drawable/ic_back">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerInParent="true"
+                    android:text="Kategori Sampah"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+
+        </androidx.appcompat.widget.Toolbar>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="10dp"
+                android:lineSpacingExtra="5dp"
+                android:text="Berdasarkan jenis sampah tersebut, maka terdapat beberapa kategori tong sampah yang digunakan untuk mengelola atau yang sering dijumpai adalah :
+"
+                android:textColor="@color/black"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="10dp"
+                android:lineSpacingExtra="5dp"
+                android:text="1. Tempat sampah organik (warna hijau)
+                                    Jenis tempat sampah bewarna hijau merupakan wadah untuk sisa makanan organik. nantinya sampah ini bisa dijadikan pupuk kompos. biasanya sampah organik berupa daun-daunan, bekas sayuran, dan lain-lain. selain itu, tempat sampah ini juga mempercepat pembuatan kompos."
+                android:textColor="@color/black"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="10dp"
+                android:lineSpacingExtra="5dp"
+                android:text="2. Tempat Sampah Non Organik (warna kuning)
+                                    Warna kuning menjadi ciri khas bagi tempat sampah untuk jenis non organik, seperti plastik bekas, kemasan air mineral berbahan plastik dan lain-lain. dengan adanya tempat sampah ini dapat mempermudah pemanfaatannya sebagai kerajinan daur ulang atau daur ulang di pabrik.
+"
+                android:textColor="@color/black"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="10dp"
+                android:lineSpacingExtra="5dp"
+                android:text="3. Tempat Sampah Non Organik Berbahaya / B3 (Warna Merah)
+
+                                        Sampah jenis ini harus dipisah karena biasanya berasal dari B3 (Bahan Berbahaya Beracun) yaitu sampah kaca, kemasan detergen atau pembersih lainnya serta pembasmi serangga dan sejenisnya. hal tersebut berguna supaya sampah jenis ini tidak membahayakan kesehatan dan keselamatan orang lain dan mahluk hidup lainnya."
+
+                android:textColor="@color/black"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="10dp"
+                android:lineSpacingExtra="5dp"
+                android:text="4. Tempat Sampah Non Organik Berbahan Kertas (Warna Biru)
+
+                                                Tempat sampah biru ini diperuntukan bagi sampah jenis kertas. pemisahan sampah kertas bermanfaat untuk mempermudah pengrajin dan industri daur ulang untuk mengolah sampah menjadi kebutuhan lainnya. "
+
+                android:textColor="@color/black"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="10dp"
+                android:lineSpacingExtra="5dp"
+                android:text="5. Tempat Sampah Residu (Warna Abu-abu)
+                                    Tempat sampah jenis ini diperuntukan bagi tempat sampah residu. artinya tempat sampah ini hanya boleh di isi sampah-sampah selain 4 jenis tersebut diatas."
+                android:textColor="@color/black"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
